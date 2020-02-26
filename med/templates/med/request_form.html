@@ -1,0 +1,10 @@
+{% extends 'med/base.html' %}
+
+{% block body %}
+    <div class="alert alert-info">TO: {{ inphone }}</div>
+    <div class="alert alert-info">FROM: {{ outphone }}</div>
+    <form method="post">
+        {{ form.as_p }}
+        <input type="submit" value="Save">
+    </form>
+{% endblock %}

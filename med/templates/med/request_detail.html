@@ -1,0 +1,18 @@
+{% extends 'med/base.html' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Created: {{ object.created_at }}
+                <br>
+                Open:{{ object.open }}
+                <br>
+                Reason: {{ object.reason }}
+                <br>
+                TO : {{ object.patient }}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
